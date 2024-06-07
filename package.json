@@ -10,8 +10,7 @@
     "prisma:studio": "prisma studio",
     "start": "node dist/index.js",
     "dev": "npx tsc && nodemon dist/index.js",
-    "build": "npx tsc && npm run copy-files",
-    "copy-files": "cp -R public/* dist"
+    "build": "npx tsc"
   },
   "dependencies": {
     "@prisma/client": "5.14.0",
