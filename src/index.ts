@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/stories", storiesRoute);
 
 app.get("/", function (req, res) {
-  res.status(200).send("Hello World!");
+  res.status(200).send("<html><body><h1>It work!</h1></body></html>");
 });
 
 app.listen(port, () => {
