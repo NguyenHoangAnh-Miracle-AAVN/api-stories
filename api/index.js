@@ -11,21 +11,8 @@ app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 // define a route to get all stories from defined route
 app.use("/stories", stories_1.default);
-app.get('/', async (req, res) => {
-			res.status(200).send(`
-                <html>
-                    <head>
-                        <title>Users</title>
-                    </head>
-                    <body>
-                        <h1>Users</h1>
-                        <div>
-                            <a href="/">Home</a>
-                            <a href="/uploadUser">Add User</a>
-                        </div>
-                    </body>
-                </html>
-            `);
+app.get("/", function (req, res) {
+    res.status(200).send("Hello World!");
 });
 app.listen(port, function () {
     return console.log("Express is listening at http://localhost:".concat(port));
