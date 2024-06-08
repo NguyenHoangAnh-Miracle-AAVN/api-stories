@@ -12,7 +12,7 @@ app.use(express_1.default.urlencoded({ extended: true }));
 // define a route to get all stories from defined route
 app.use("/stories", stories_1.default);
 app.get("/", function (req, res) {
-    res.status(200).send("Hello World!");
+    res.status(200).send("<html><body><h1>It work!</h1></body></html>");
 });
 app.listen(port, function () {
     return console.log("Express is listening at http://localhost:".concat(port));
